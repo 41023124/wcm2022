@@ -304,6 +304,7 @@ run()
 <p>第15週<br/>端午節放假<br/>將俄羅斯方塊加入計分系統</p>
 <p>第16週<br/>期末報告整理</p>
 <p>第17週<br/>利用錄影方式呈現俄羅斯方塊計分系統獲得6分並增加說明</p>
+<p>第18週<br/>修改俄羅斯方塊由下至上運行</p>
 <h1>w17</h1>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="/downloads/w17.mp4" title="YouTube video player" width="560"></iframe></p>
 <p>任務執行過程心得 : 在任務的過程中,需要完成俄羅斯方塊並且或的6分不減速 有點難,但會一次獲得16分是因為一次消除4排,所以獲得4的平方的分數,然後需要追加程式的說明,並且製作成影片的方式並且上傳至個人網站.</p>
@@ -357,7 +358,7 @@ def run():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/41023124/b3273176d92a5bdd6926f833ad14956b/raw/fc624287de81cd744f7b9c53d70a2101ea2f988d/w18"
+        url = "https://gist.githubusercontent.com/41023124/b3273176d92a5bdd6926f833ad14956b/raw/62f1dc1f5f928909ebdbb1f57320a863d0f4f7f1/w18"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -400,4 +401,6 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 <p>製作心得 : 剛開始在製作時，完全沒有頭緒，所以我去參考43號同學的程式，一行一行去比對， 發現多了ctx.translate(0,canvas.height)和ctx.scale(1,-1)，雖然剛開始不了解為什麼這兩行 可以讓整個程式倒轉，但之後上網搜尋後，發現一個是改變程式的原點，另一個是顛倒Y軸 正負值，所以才可以導致整個程式倒轉。</p>
 <p>只要利用scale()，我們可以建立著名的笛卡兒座標系；執行translate(0,canvas.height)先移動畫布原點到左下角，再執行scale(1,-1)顛倒Y軸正負值，一個笛卡兒座標系便完成了。</p>
-<p>參考網址 : https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial/Transformations</p>
+<p>參考網址 : <a href="https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial/Transformations">https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial/Transformations</a></p>
+<p></p>
+<h1>期末任務-1</h1>
