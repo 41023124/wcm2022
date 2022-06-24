@@ -228,7 +228,10 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/gearUtils-09.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
-<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script><br />w18-1 << <a href='w18-1.html'>Previous</a> <a href='期末任務1.html'>Next</a> >> 期末任務1</div>
+<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
+<p>製作心得 : 在製作時，參考了老師的auto俄羅斯方塊程式，並與w18-1的程式相同，加入了ctx.translate(0,canvas.height)和ctx.scale(1,-1)去更改程式的起始原點與顛倒Y軸的正負值，但在更改後發現老師原本的score字樣會顛倒，所以把老師的score程式刪除，加入自己的score程式就可以解決了。</p>
+<p>只要利用scale()，我們可以建立著名的笛卡兒座標系；執行translate(0,canvas.height)先移動畫布原點到左下角，再執行scale(1,-1)顛倒Y軸正負值，一個笛卡兒座標系便完成了。</p>
+<p>參考網址 : https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial/Transformations</p><br />w18-1 << <a href='w18-1.html'>Previous</a> <a href='期末任務1.html'>Next</a> >> 期末任務1</div>
         
     <!-- footer -->
       <div class="container">

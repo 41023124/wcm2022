@@ -304,8 +304,7 @@ run()
 <p>第15週<br/>端午節放假<br/>將俄羅斯方塊加入計分系統</p>
 <p>第16週<br/>期末報告整理</p>
 <p>第17週<br/>利用錄影方式呈現俄羅斯方塊計分系統獲得6分並增加說明</p>
-<p>第18週<br/>修改俄羅斯方塊由下至上運行</p>
-<h1>w17</h1>
+<p>第18週<br/>修改俄羅斯方塊由下至上運行<br/>修改自動俄羅斯方塊由下至上運行</p><h1>w17</h1>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="/downloads/w17.mp4" title="YouTube video player" width="560"></iframe></p>
 <p>任務執行過程心得 : 在任務的過程中,需要完成俄羅斯方塊並且或的6分不減速 有點難,但會一次獲得16分是因為一次消除4排,所以獲得4的平方的分數,然後需要追加程式的說明,並且製作成影片的方式並且上傳至個人網站.</p>
 <p></p>
@@ -492,7 +491,9 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/gearUtils-09.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
-<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script><h1>期末任務1</h1>
+<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
+<p>製作心得 : 在製作時，參考了老師的auto俄羅斯方塊程式，並與w18-1的程式相同，加入了ctx.translate(0,canvas.height)和ctx.scale(1,-1)去更改程式的起始原點與顛倒Y軸的正負值，但在更改後發現老師原本的score字樣會顛倒，所以把老師的score程式刪除，加入自己的score程式就可以解決了。</p>
+<p>只要利用scale()，我們可以建立著名的笛卡兒座標系；執行translate(0,canvas.height)先移動畫布原點到左下角，再執行scale(1,-1)顛倒Y軸正負值，一個笛卡兒座標系便完成了。</p><h1>期末任務1</h1>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="/downloads/期末任務-1.mp4" title="YouTube video player" width="560"></iframe></p>
 <p>製作心得 : 剛開始在製作時，完全沒有頭緒，所以我去參考43號同學的程式，一行一行去比對， 發現多了ctx.translate(0,canvas.height)和ctx.scale(1,-1)，雖然剛開始不了解為什麼這兩行 可以讓整個程式倒轉，但之後上網搜尋後，發現一個是改變程式的原點，另一個是顛倒Y軸 正負值，所以才可以導致整個程式倒轉。</p>
 <p>只要利用scale()，我們可以建立著名的笛卡兒座標系；執行translate(0,canvas.height)先移動畫布原點到左下角，再執行scale(1,-1)顛倒Y軸正負值，一個笛卡兒座標系便完成了。</p>
